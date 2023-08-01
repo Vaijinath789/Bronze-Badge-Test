@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center{
+            font-size: 50px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table:hover{
+            border-style: dashed;
+        }
+        th{
+            background-color: antiquewhite;
+        }
+    
+        tr:nth-child(even){
+            /* background-color: aqua; */
+            animation: me 6s infinite;
+        }
+        @keyframes me{
+            from{background-color:chocolate;}
+            to{background-color: aqua;}
+        }
+        tr>td:nth-child(3):hover{
+            background-color:cadetblue;
+            color: white;
+        }
+        tr:nth-child(odd){
+            background-color:aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <center><caption>Pricing Table</caption>
+    <table border="2" cellspacing="9" cellpadding="9">
+        <tr>
+            <th>Name</th>
+            <th> Purches Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Pavan</td>
+            <td> Oil</td>
+            <td>10s</td>
+        </tr>
+
+        <tr>
+            <td>Abhi</td>
+            <td> pen</td>
+            <td>10s</td>
+        </tr>
+
+        <tr>
+            <td>Tejas</td>
+            <td> Pensil</td>
+            <td>5s</td>
+        </tr>
+
+        <tr>
+            <td>Manju</td>
+            <td> Kaju</td>
+            <td>20s</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
